@@ -4,6 +4,9 @@ import java.awt.Color;
 import java.awt.Font;
 import java.io.File;
 
+import cn.edu.bjtu.weibo.service.MultipartFile;
+import cn.edu.bjtu.weibo.service.Picture;
+
 public interface MarkService{
 	
 	public static final String MARK_TEXT="×¦ÍÛÎ¢²©Ë®Ó¡";
@@ -19,7 +22,20 @@ public interface MarkService{
 	
 			
 	
-	public String watermark(File image,String imageFileName,String uploadPath,String realuploadPth);
+	public String watermark(File upload, String imageid, String uploadPath,
+            String imgOrUrl);
+
+
+
+	String getimgOrUrl(String imgid);
+
+
+
+	String insert(String time, String imgOrUrl, String ImgThurl);
+
+
+
+	Picture uploadPicture(MultipartFile multipartFile);
 	
 
 }
