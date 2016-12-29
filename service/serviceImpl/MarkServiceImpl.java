@@ -21,8 +21,8 @@ import cn.edu.bjtu.weibo.service.MultipartFile;
 import cn.edu.bjtu.weibo.service.Picture;
 import cn.edu.bjtu.weibo.service.PictureService;
 
-public final class ImageUtils implements MarkService,ImgDAO,PictureService{
- public ImageUtils() {
+public final class MarkServiceImpl implements MarkService,ImgDAO,PictureService{
+ public MarkServiceImpl() {
 	 
  }
 public static void MARK_TEXT(String MARK_TEXT, String imgOrUrl, String ImgThurl, int x, int y)
