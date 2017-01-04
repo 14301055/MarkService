@@ -25,8 +25,8 @@ public class MarkServiceImpl {
 	public void mark(String srcImgPath, String outImgPath, Color markContentColor, String waterMarkContent) {
 		try {
             // 读取原图片信息
-            File upload = new File(srcImgPath);
-            Image srcImg = ImageIO.read(upload);
+            File srcImgFile = new File(srcImgPath);
+            Image srcImg = ImageIO.read(srcImgFile);
             int srcImgWidth = srcImg.getWidth(null);
             int srcImgHeight = srcImg.getHeight(null);
             // 加水印
@@ -66,6 +66,6 @@ public class MarkServiceImpl {
     
     public static void main(String[] args) {
     	// 原图位置, 输出图片位置, 水印文字颜色, 水印文字
-        new MarkServiceImpl().mark("srcImgPath", "srcImgPath", Color.WHITE, "@爪哇微博通用水印OVO");
+        new MarkServiceImpl().mark("F:/picture/1.png", "F:/picture/1.png", Color.WHITE, "@爪哇微博通用水印OVO");
    }
 }
