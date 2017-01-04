@@ -66,6 +66,6 @@ public class MarkServiceImpl {
     
     public static void main(String[] args) {
     	// 原图位置, 输出图片位置, 水印文字颜色, 水印文字
-        new MarkServiceImpl().mark("F:/picture/1.png", "F:/picture/1.png", Color.WHITE, "@爪哇微博通用水印OVO");
+        new MarkServiceImpl().mark("F:/picture/1.png", "F:/picture/1.png", Color.WHITE, "@weibo.com");
    }
 }
